@@ -1,0 +1,61 @@
+﻿@model IEnumerable<AttendanceSystem.Models.Department>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/master.cshtml";
+}
+<!--begin::Portlet-->
+<div class="m-portlet">
+    <div class="m-portlet__head">
+        <div class="m-portlet__head-caption">
+            <div class="m-portlet__head-title">
+                <span class="m-portlet__head-icon m--hide">
+                    <i class="la la-gear"></i>
+                </span>
+                <h3 class="m-portlet__head-text">
+                    View Departments
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <!--begin::Form-->
+    <div class="m-portlet__body">
+        <a href="@Url.Action("Create","Departments")" class="btn btn-lg btn-primary mb-4">Create Department</a>
+        <table class="table table-responsive-md table m-table m-table--head-bg-brand table-hover">
+            <thead class="bg-success">
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Operating Unit
+                    </th>
+                    <th class="w-25">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.name
+                        </td>
+                        <td>
+                            @item.operatingUnit.name
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Edit", new { id= item.id } )" class="btn btn-success btn-sm"><i class="flaticon-edit"></i></a>
+                            <a href="@Url.Action("Delete",  new { id= item.id } )" class="btn btn-danger btn-sm"><i class="flaticon-delete"></i></a>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+    <!--end::Form-->
+</div>
+
+<!--end::Portlet-->

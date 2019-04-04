@@ -1,0 +1,268 @@
+﻿
+<button class="m-aside-left-close  m-aside-left-close--skin-dark " id="m_aside_left_close_btn"><i class="la la-close"></i></button>
+ <div id="m_aside_left" class="m-grid__item	m-aside-left  m-aside-left--skin-dark ">
+
+    <!-- BEGIN: Aside Menu -->
+    <div id="m_ver_menu" class="m-aside-menu  m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark " m-menu-vertical="1" m-menu-scrollable="1" m-menu-dropdown-timeout="500" style="position: relative;">
+        <ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow ">
+            <li class="m-menu__item  m-menu__item--active" aria-haspopup="true">
+                <a href="index.html" class="m-menu__link ">
+                    <i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-title">
+                        <span class="m-menu__link-wrap">
+                            <span class="m-menu__link-text">Dashboard</span>
+                            <span class="m-menu__link-badge"><span class="m-badge m-badge--danger">2</span></span>
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li class="m-menu__section ">
+                <h4 class="m-menu__section-text">Menu</h4>
+                <i class="m-menu__section-icon flaticon-more-v2"></i>
+            </li>
+
+            @*Legal Entities Pages*@
+            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">
+                <a href="@Url.Action("Index","LegalEntities")" class="m-menu__link m-menu__toggle">
+                    <i class="m-menu__link-icon flaticon-users"></i>
+                    <span class="m-menu__link-text">Legal Entities</span>
+                </a>
+            </li>
+            @*End Legal Entities Pages*@
+
+            @*Operating Units Pages*@
+            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">
+                <a href="@Url.Action("Index","OperatingUnits")" class="m-menu__link m-menu__toggle">
+                    <i class="m-menu__link-icon flaticon-users"></i>
+                    <span class="m-menu__link-text">Operating units</span>
+                </a>
+            </li>
+            @*End Operating Units Pages*@
+
+            @*Departments Pages*@
+            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">
+                <a href=";" class="m-menu__link m-menu__toggle">
+                    <i class="m-menu__link-icon flaticon-buildings"></i>
+                    <span class="m-menu__link-text">Departments</span>
+                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                </a>
+                <div class="m-menu__submenu ">
+                    <span class="m-menu__arrow"></span>
+                    <ul class="m-menu__subnav">
+                        <li class="m-menu__item " aria-haspopup="true">
+                            <a href="@Url.Action("Index","Departments")" class="m-menu__link ">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                    <span></span>
+                                </i>
+                                <span class="m-menu__link-text">Departments</span>
+                            </a>
+                        </li>
+                        <li class="m-menu__item " aria-haspopup="true">
+                            <a href="@Url.Action("Index","SubDepartments")" class="m-menu__link ">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                    <span></span>
+                                </i>
+                                <span class="m-menu__link-text">Sub Departments</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            @*End Departments Pages*@
+
+            @*Employees Pages*@
+            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">
+                <a href="@Url.Action("Index","Employees")" class="m-menu__link m-menu__toggle">
+                    <i class="m-menu__link-icon flaticon-users"></i>
+                    <span class="m-menu__link-text">Employees</span>
+                </a>
+            </li>
+            @*End Employees Pages*@
+
+            @*HR Policies Pages*@
+            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">
+                <a href="javascript:;" class="m-menu__link m-menu__toggle">
+                    <i class="m-menu__link-icon flaticon-search-magnifier-interface-symbol"></i>
+                    <span class="m-menu__link-text">HR Policies</span>
+                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                </a>
+                <div class="m-menu__submenu ">
+                    <span class="m-menu__arrow"></span>
+                    <ul class="m-menu__subnav">
+                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
+                            <span class="m-menu__link">
+                                <span class="m-menu__link-text">HR Policies</span>
+                            </span>
+                        </li>
+                        <li class="m-menu__item " aria-haspopup="true">
+                            <a href="components/base/state.html" class="m-menu__link ">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                    <span></span>
+                                </i>
+                                <span class="m-menu__link-text">State Colors</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            @*End HR Policies Pages*@
+
+
+            @*Payroll Pages*@
+            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">
+                <a href="javascript:;" class="m-menu__link m-menu__toggle">
+                    <i class="m-menu__link-icon fa fa-id-card"></i>
+                    <span class="m-menu__link-text">Payroll</span>
+                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                </a>
+                <div class="m-menu__submenu ">
+                    <span class="m-menu__arrow"></span>
+                    <ul class="m-menu__subnav">
+                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
+                            <span class="m-menu__link">
+                                <span class="m-menu__link-text">Payroll</span>
+                            </span>
+                        </li>
+                        <li class="m-menu__item " aria-haspopup="true">
+                            <a href="components/base/state.html" class="m-menu__link ">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                    <span></span>
+                                </i>
+                                <span class="m-menu__link-text">State Colors</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            @*End Payroll Pages*@
+
+
+            @*Notices Pages*@
+            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">
+                <a href="javascript:;" class="m-menu__link m-menu__toggle">
+                    <i class="m-menu__link-icon fa fa-bullhorn"></i>
+                    <span class="m-menu__link-text">Notices</span>
+                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                </a>
+                <div class="m-menu__submenu ">
+                    <span class="m-menu__arrow"></span>
+                    <ul class="m-menu__subnav">
+                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
+                            <span class="m-menu__link">
+                                <span class="m-menu__link-text">Notices</span>
+                            </span>
+                        </li>
+                        <li class="m-menu__item " aria-haspopup="true">
+                            <a href="components/base/state.html" class="m-menu__link ">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                    <span></span>
+                                </i>
+                                <span class="m-menu__link-text">State Colors</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            @*End Notices Pages*@
+
+
+            @*Attendance Pages*@
+            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">
+                <a href="javascript:;" class="m-menu__link m-menu__toggle">
+                    <i class="m-menu__link-icon fa fa-user-check"></i>
+                    <span class="m-menu__link-text">Attendance</span>
+                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                </a>
+                <div class="m-menu__submenu ">
+                    <span class="m-menu__arrow"></span>
+                    <ul class="m-menu__subnav">
+                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
+                            <span class="m-menu__link">
+                                <span class="m-menu__link-text">Attendance</span>
+                            </span>
+                        </li>
+                        <li class="m-menu__item " aria-haspopup="true">
+                            <a href="components/base/state.html" class="m-menu__link ">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                    <span></span>
+                                </i>
+                                <span class="m-menu__link-text">State Colors</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            @*End Attendance Pages*@
+
+
+            @*Shift Planner Pages*@
+            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">
+                <a href="@Url.Action("Index","Shifts")" class="m-menu__link m-menu__toggle">
+                    <i class="m-menu__link-icon flaticon-graph"></i>
+                    <span class="m-menu__link-text">Shift Planner</span>
+                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                </a>
+            </li>
+            @*End Shift Planner Pages*@
+
+
+            @*Recruitment Pages*@
+            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">
+                <a href="javascript:;" class="m-menu__link m-menu__toggle">
+                    <i class="m-menu__link-icon flaticon-list"></i>
+                    <span class="m-menu__link-text">Recruitment</span>
+                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                </a>
+                <div class="m-menu__submenu ">
+                    <span class="m-menu__arrow"></span>
+                    <ul class="m-menu__subnav">
+                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
+                            <span class="m-menu__link">
+                                <span class="m-menu__link-text">Recruitment</span>
+                            </span>
+                        </li>
+                        <li class="m-menu__item " aria-haspopup="true">
+                            <a href="components/base/state.html" class="m-menu__link ">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                    <span></span>
+                                </i>
+                                <span class="m-menu__link-text">State Colors</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            @*End Recruitment Pages*@
+
+
+            @*Leave Planner Pages*@
+            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover">
+                <a href="javascript:;" class="m-menu__link m-menu__toggle">
+                    <i class="m-menu__link-icon flaticon-user-ok"></i>
+                    <span class="m-menu__link-text">Leave Planner</span>
+                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                </a>
+                <div class="m-menu__submenu ">
+                    <span class="m-menu__arrow"></span>
+                    <ul class="m-menu__subnav">
+                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
+                            <span class="m-menu__link">
+                                <span class="m-menu__link-text">Leave Planner</span>
+                            </span>
+                        </li>
+                        <li class="m-menu__item " aria-haspopup="true">
+                            <a href="components/base/state.html" class="m-menu__link ">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                    <span></span>
+                                </i>
+                                <span class="m-menu__link-text">State Colors</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            @*End Leave Planner Pages*@
+        </ul>
+    </div>
+
+    <!-- END: Aside Menu -->
+</div>

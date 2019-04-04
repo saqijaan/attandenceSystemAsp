@@ -1,0 +1,59 @@
+﻿@model AttendanceSystem.Models.OperatingUnit
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/master.cshtml";
+}
+
+<!--begin::Portlet-->
+<div class="m-portlet">
+    <div class="m-portlet__head">
+        <div class="m-portlet__head-caption">
+            <div class="m-portlet__head-title">
+                <span class="m-portlet__head-icon m--hide">
+                    <i class="la la-gear"></i>
+                </span>
+                <h3 class="m-portlet__head-text">
+                    Edit Operating Unit
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <!--begin::Form-->
+    <form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator" action="@Url.Action("Edit","OperatingUnits")" method="post">
+        @Html.AntiForgeryToken()
+        <div class="m-portlet__body">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.name, "Operating Unit Name", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-lg-6">
+                    @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control m-input" } })
+                    @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.legalEntity_id, "Legal Entity", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.DropDownList("legalEntity_id", null,"Select Legal Entity", htmlAttributes: new { @class = "form-control form-control m-input m-input--air" })
+                    @Html.ValidationMessageFor(model => model.legalEntity_id, "Legal Entity Required", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="m-portlet__foot m-portlet__no-border m-portlet__foot--fit">
+            <div class="m-form__actions m-form__actions--solid">
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-6">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button type="reset" class="btn btn-secondary">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!--end::Form-->
+</div>
+
+<!--end::Portlet-->

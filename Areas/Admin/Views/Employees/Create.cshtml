@@ -1,0 +1,191 @@
+﻿@model AttendanceSystem.Models.Employee
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/master.cshtml";
+}
+
+<!--begin::Portlet-->
+<div class="m-portlet">
+    <div class="m-portlet__head">
+        <div class="m-portlet__head-caption">
+            <div class="m-portlet__head-title">
+                <span class="m-portlet__head-icon m--hide">
+                    <i class="la la-gear"></i>
+                </span>
+                <h3 class="m-portlet__head-text">
+                    Create Employee
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <!--begin::Form-->
+    <form class="m-form m-form--fit m-form--label-align-right m-form--group-seperator" action="@Url.Action("Create","Employees")" method="post">
+        @Html.AntiForgeryToken()
+        <div class="m-portlet__body">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.name, "Name", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-lg-6">
+                    @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control m-input" } })
+                    @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.gender,"Gender", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.DropDownListFor(model => model.gender, new SelectList(new[] { "Male", "Female", "Others" }, "Select Gender"), htmlAttributes: new { @class = "form-control m-input" });
+                    @Html.ValidationMessageFor(model => model.gender, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.dob,"Date of Birth", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.EditorFor(model => model.dob, new { htmlAttributes = new { @class = "form-control m-input" } })
+                    @Html.ValidationMessageFor(model => model.dob, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.address,"Address", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.EditorFor(model => model.address, new { htmlAttributes = new { @class = "form-control m-input" } })
+                    @Html.ValidationMessageFor(model => model.address, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.city,"City", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.EditorFor(model => model.city, new { htmlAttributes = new { @class = "form-control m-input" } })
+                    @Html.ValidationMessageFor(model => model.city, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.country,"Country", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.EditorFor(model => model.country, new { htmlAttributes = new { @class = "form-control m-input" } })
+                    @Html.ValidationMessageFor(model => model.country, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.image,"Image", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.EditorFor(model => model.image, new { htmlAttributes = new { @class = "form-control m-input" } })
+                    @Html.ValidationMessageFor(model => model.image, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.phone,"Phone", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.EditorFor(model => model.phone, new { htmlAttributes = new { @class = "form-control m-input" } })
+                    @Html.ValidationMessageFor(model => model.phone, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.emergencyPhone,"Emergency Phone", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.EditorFor(model => model.emergencyPhone, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.emergencyPhone, "", new { @class = "text-danger m-input" })
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.cnic,"Cnic", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.EditorFor(model => model.cnic, new { htmlAttributes = new { @class = "form-control m-input" } })
+                    @Html.ValidationMessageFor(model => model.cnic, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.detail,"Details", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.EditorFor(model => model.detail, new { htmlAttributes = new { @class = "form-control m-input" } })
+                    @Html.ValidationMessageFor(model => model.detail, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.religion,"Religion", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.DropDownListFor(model => model.religion, new SelectList(new[] { "Islam","Hinduism","Others" }, "Select Religion"), htmlAttributes: new { @class = "form-control m-input" });
+                    @Html.ValidationMessageFor(model => model.religion, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.dislabled,"Is Disabled ?", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    <div class="checkbox">
+                        @Html.EditorFor(model => model.dislabled)
+                        @Html.ValidationMessageFor(model => model.dislabled, "", new { @class = "text-danger m-input" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.bloodGroup,"Blood Group", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.EditorFor(model => model.bloodGroup, new { htmlAttributes = new { @class = "form-control m-input" } })
+                    @Html.ValidationMessageFor(model => model.bloodGroup, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.bankAcc,"Bank ACC#", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.EditorFor(model => model.bankAcc, new { htmlAttributes = new { @class = "form-control m-input" } })
+                    @Html.ValidationMessageFor(model => model.bankAcc, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.experience,"Experience", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.EditorFor(model => model.experience, new { htmlAttributes = new { @class = "form-control m-input" } })
+                    @Html.ValidationMessageFor(model => model.experience, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.department_id,"Department", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.DropDownList("department_id", null, htmlAttributes: new { @class = "form-control m-input" })
+                    @Html.ValidationMessageFor(model => model.department_id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group m-form__group row">
+                @Html.LabelFor(model => model.shift_id,"Shift", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                <div class="col-md-6">
+                    @Html.DropDownList("shift_id", null, htmlAttributes: new { @class = "form-control m-input" })
+                    @Html.ValidationMessageFor(model => model.shift_id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+           
+        </div>
+        <div class="m-portlet__foot m-portlet__no-border m-portlet__foot--fit">
+            <div class="m-form__actions m-form__actions--solid">
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-6">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button type="reset" class="btn btn-secondary">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!--end::Form-->
+</div>
+
+<!--end::Portlet-->
