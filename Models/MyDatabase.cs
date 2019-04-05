@@ -13,5 +13,11 @@ namespace AttendanceSystem.Models
         public DbSet<OperatingUnit> OperatingUnit { get; set; }
         public DbSet<Shift> Shifts { get; set; }
         public DbSet<Employee> Employees { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer<MyDatabase>(null);
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
