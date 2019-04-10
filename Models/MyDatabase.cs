@@ -6,7 +6,7 @@ using System.Data.Entity;
 using MySql.Data.Entity;
 namespace AttendanceSystem.Models
 {
-   // [DbConfigurationType(typeof(MySqlEFConfiguration))]
+   [DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class MyDatabase : DbContext
     {
         public DbSet<Department> Departments { get; set; }
