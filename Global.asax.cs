@@ -14,6 +14,8 @@ namespace AttendanceSystem
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            Database.SetInitializer<Models.MyDatabase>(new DropCreateDatabaseIfModelChanges<Models.MyDatabase>());
         }
     }
 }
