@@ -5,16 +5,19 @@ using System.Web;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace AttendanceSystem.Models
 {
-    public class OperatingUnit
+    public class Documents
     {
         public int id { get; set; }
+
+        public string type { get; set; }
+
         public string name { get; set; }
 
-        public int legalEntity_id { get; set; }
+        public string file { get; set; }
 
-        [ForeignKey("legalEntity_id")]
-        public virtual LegalEntity legalEntity { get; set; }
+        public int employee_id { get; set; }
 
-        public virtual ICollection<Department> departments { get; set; }
+        [ForeignKey("employee_id")]
+        public virtual Employee Employee { get; set; }
     }
 }

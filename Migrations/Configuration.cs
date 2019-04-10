@@ -10,8 +10,6 @@ namespace AttendanceSystem.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
-            ContextKey = "AttendanceSystem.Models.Database";
-            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(AttendanceSystem.Models.MyDatabase context)

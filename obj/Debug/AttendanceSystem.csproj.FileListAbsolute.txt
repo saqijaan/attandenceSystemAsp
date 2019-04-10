@@ -35,5 +35,7 @@ C:\Users\msaqib\documents\visual studio 2015\Projects\AttendanceSystem\Attendanc
 C:\Users\msaqib\documents\visual studio 2015\Projects\AttendanceSystem\AttendanceSystem\bin\EntityFramework.xml
 C:\Users\msaqib\documents\visual studio 2015\Projects\AttendanceSystem\AttendanceSystem\bin\EntityFramework.SqlServer.xml
 C:\Users\msaqib\documents\visual studio 2015\Projects\AttendanceSystem\AttendanceSystem\obj\Debug\AttendanceSystem.csprojResolveAssemblyReference.cache
-C:\Users\msaqib\documents\visual studio 2015\Projects\AttendanceSystem\AttendanceSystem\obj\Debug\AttendanceSystem.Migrations.init.resources
-C:\Users\msaqib\documents\visual studio 2015\Projects\AttendanceSystem\AttendanceSystem\obj\Debug\AttendanceSystem.csproj.GenerateResource.Cache
+C:\Users\msaqib\Documents\Visual Studio 2015\Projects\AttendanceSystem\AttendanceSystem\bin\MySql.Data.dll
+C:\Users\msaqib\Documents\Visual Studio 2015\Projects\AttendanceSystem\AttendanceSystem\bin\MySql.Data.Entity.EF6.dll
+C:\Users\msaqib\Documents\Visual Studio 2015\Projects\AttendanceSystem\AttendanceSystem\bin\MySql.Data.xml
+C:\Users\msaqib\Documents\Visual Studio 2015\Projects\AttendanceSystem\AttendanceSystem\bin\MySql.Data.Entity.EF6.xml

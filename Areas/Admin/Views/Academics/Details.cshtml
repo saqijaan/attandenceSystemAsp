@@ -1,0 +1,74 @@
+﻿@model AttendanceSystem.Models.Academic
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Academic</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Employee.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Employee.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.degree)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.degree)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.borad)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.borad)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.total_marks)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.total_marks)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.obtain_marks)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.obtain_marks)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.passing_year)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.passing_year)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

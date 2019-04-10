@@ -56,6 +56,20 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.10.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.10.8\lib\net452\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.10.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.10.8\lib\net452\MySql.Data.Entity.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -398,6 +412,26 @@
     <Content Include="Areas\Admin\Views\Shifts\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Shifts\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Shifts\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\CompanyAssets\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\CompanyAssets\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\CompanyAssets\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\CompanyAssets\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\CompanyAssets\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Documents\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Documents\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Documents\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Documents\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Documents\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Licenses\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Licenses\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Licenses\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Licenses\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Licenses\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Academics\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Academics\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Academics\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Academics\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Academics\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -411,10 +445,14 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AcademicsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CompanyAssetsController.cs" />
     <Compile Include="Areas\Admin\Controllers\DepartmentsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DocumentsController.cs" />
     <Compile Include="Areas\Admin\Controllers\EmployeesController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LegalEntitiesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LicensesController.cs" />
     <Compile Include="Areas\Admin\Controllers\OperatingUnitsController.cs" />
     <Compile Include="Areas\Admin\Controllers\ShiftsController.cs" />
     <Compile Include="Areas\Admin\Controllers\SubDepartmentsController.cs" />
@@ -423,12 +461,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201903291930113_init.cs" />
-    <Compile Include="Migrations\201903291930113_init.Designer.cs">
-      <DependentUpon>201903291930113_init.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Academic.cs" />
+    <Compile Include="Models\CompanyAssets.cs" />
+    <Compile Include="Models\Documents.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\License.cs" />
     <Compile Include="Models\MyDatabase.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\LegalEntity.cs" />
@@ -491,11 +529,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201903291930113_init.resx">
-      <DependentUpon>201903291930113_init.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

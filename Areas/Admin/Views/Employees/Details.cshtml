@@ -24,356 +24,363 @@
     <div class="m-portlet__body">
         
         <div class="row">
-    <div class="col-md-3 text-center">
-        <img class="w-75 rounded-circle" src="~/assets/app/media/img/client-logos/logo1.png" />
-    </div>
-    <div class="col-md-9 text-center text-md-left">
-        <div class="h-100 pt-5">
-            <h4>@Model.name</h4>
-            <h6>Software Designer & Developer</h6>
+            <div class="col-md-3 text-center">
+                <img class="w-75 rounded-circle" src="~/assets/app/media/img/client-logos/logo1.png" />
+            </div>
+            <div class="col-md-9 text-center text-md-left">
+                <div class="h-100 pt-5">
+                    <h4>@Model.name</h4>
+                    <h6>Software Designer & Developer</h6>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-3">
-        <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'personalInfo')" id="defaultOpen">Personal info</button>
-            <button class="tablinks" onclick="openCity(event, 'officialinfo')">Official Info</button>
-            <button class="tablinks" onclick="openCity(event, 'contactInfo')">Contact Info</button>
-            <button class="tablinks" onclick="openCity(event, 'academicInfo')">Academic info</button>
-            <button class="tablinks" onclick="openCity(event, 'dependents')">Dependents</button>
-            <button class="tablinks" onclick="openCity(event, 'experience')">Experience</button>
-            <button class="tablinks" onclick="openCity(event, 'documents')">Documents</button>
-            <button class="tablinks" onclick="openCity(event, 'license')">License</button>
-            <button class="tablinks" onclick="openCity(event, 'companyAssets')">Company / Org allotted assets</button>
-            <button class="tablinks" onclick="openCity(event, 'refrences')">Reference</button>
-            <button class="tablinks" onclick="openCity(event, 'leaveBalance')">Leave Balance</button>
-            <button class="tablinks" onclick="openCity(event, 'extraduties')">Extra Duties</button>
-            <button class="tablinks" onclick="openCity(event, 'attendanceSettings')">Attendance Setting</button>
-            <button class="tablinks" onclick="openCity(event, 'salarySettings')">Salary Setting</button>
-        </div>
-    </div>
-    <div class="col-md-9">
-        <div id="personalInfo" class="tabcontent h-100">
-            <h3>Personal Info</h3>
-            <div class="row">
-                @Html.LabelFor(model => model.name, "Name", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
-                <div class="col-md-6">
-                    @Model.name
+        <div class="row">
+            <div class="col-md-3">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'personalInfo')" id="defaultOpen">Personal info</button>
+                    <button class="tablinks" onclick="openCity(event, 'officialinfo')">Official Info</button>
+                    <button class="tablinks" onclick="openCity(event, 'contactInfo')">Contact Info</button>
+                    <button class="tablinks" onclick="openCity(event, 'academicInfo')">Academic info</button>
+                    <button class="tablinks" onclick="openCity(event, 'dependents')">Dependents</button>
+                    <button class="tablinks" onclick="openCity(event, 'experience')">Experience</button>
+                    <button class="tablinks" onclick="openCity(event, 'documents')">Documents</button>
+                    <button class="tablinks" onclick="openCity(event, 'license')">License</button>
+                    <button class="tablinks" onclick="openCity(event, 'companyAssets')">Company / Org allotted assets</button>
+                    <button class="tablinks" onclick="openCity(event, 'refrences')">Reference</button>
+                    <button class="tablinks" onclick="openCity(event, 'leaveBalance')">Leave Balance</button>
+                    <button class="tablinks" onclick="openCity(event, 'extraduties')">Extra Duties</button>
+                    <button class="tablinks" onclick="openCity(event, 'attendanceSettings')">Attendance Setting</button>
+                    <button class="tablinks" onclick="openCity(event, 'salarySettings')">Salary Setting</button>
                 </div>
             </div>
-            <div class="row">
-                @Html.LabelFor(model => model.name, "Gender", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
-                <div class="col-md-6">
-                    @Model.gender
-                </div>
-            </div>
-            <div class="row">
-                @Html.LabelFor(model => model.name, "Date of Birth", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
-                <div class="col-md-6">
-                    @Model.dob
-                </div>
-            </div>
-            <div class="row">
-                @Html.LabelFor(model => model.name, "Address", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
-                <div class="col-md-6">
-                    @Model.address
-                </div>
-            </div>
-            <div class="row">
-                @Html.LabelFor(model => model.name, "City", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
-                <div class="col-md-6">
-                    @Model.city
-                </div>
-            </div>
-            <div class="row">
-                @Html.LabelFor(model => model.name, "Country", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
-                <div class="col-md-6">
-                    @Model.country
-                </div>
-            </div>
-            <div class="row">
-                @Html.LabelFor(model => model.name, "Religion", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
-                <div class="col-md-6">
-                    @Model.religion
-                </div>
-            </div>
+            <div class="col-md-9">
+                <div id="personalInfo" class="tabcontent h-100">
+                    <h3>Personal Info</h3>
+                    <div class="row">
+                        @Html.LabelFor(model => model.name, "Name", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                        <div class="col-md-6">
+                            @Model.name
+                        </div>
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.name, "Gender", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                        <div class="col-md-6">
+                            @Model.gender
+                        </div>
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.name, "Date of Birth", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                        <div class="col-md-6">
+                            @Model.dob
+                        </div>
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.name, "Address", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                        <div class="col-md-6">
+                            @Model.address
+                        </div>
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.name, "City", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                        <div class="col-md-6">
+                            @Model.city
+                        </div>
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.name, "Country", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                        <div class="col-md-6">
+                            @Model.country
+                        </div>
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.name, "Religion", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                        <div class="col-md-6">
+                            @Model.religion
+                        </div>
+                    </div>
             
-            <div class="row">
-                @Html.LabelFor(model => model.name, "Blood Group", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
-                <div class="col-md-6">
-                    @Model.bloodGroup
+                    <div class="row">
+                        @Html.LabelFor(model => model.name, "Blood Group", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                        <div class="col-md-6">
+                            @Model.bloodGroup
+                        </div>
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.name, "Disabled", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                        <div class="col-md-6">
+                            @Model.dislabled
+                        </div>
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(model => model.name, "Cnic", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
+                        <div class="col-md-6">
+                            @Model.cnic
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                @Html.LabelFor(model => model.name, "Disabled", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
-                <div class="col-md-6">
-                    @Model.dislabled
-                </div>
-            </div>
-            <div class="row">
-                @Html.LabelFor(model => model.name, "Cnic", htmlAttributes: new { @class = "col-lg-2 col-form-label" })
-                <div class="col-md-6">
-                    @Model.cnic
-                </div>
-            </div>
-        </div>
 
-        <div id="officialinfo" class="tabcontent">
-            <h3>Official info</h3>
+                <div id="officialinfo" class="tabcontent">
+                    <h3>Official info</h3>
             
-        </div>
+                </div>
 
-        <div id="contactInfo" class="tabcontent">
-            <h3>Contact Info</h3>
-            <div class="m-section">
-                <div class="m-section__content">
-                    <table class="table m-table m-table--head-separator-primary">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Contact Type</th>
-                                <th>Contact Info</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Phone</td>
-                                <td>@Model.phone</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Emergency Phone</td>
-                                <td>@Model.emergencyPhone</td>
-                            </tr>
+                <div id="contactInfo" class="tabcontent">
+                    <h3>Contact Info</h3>
+                    <div class="m-section">
+                        <div class="m-section__content">
+                            <table class="table m-table m-table--head-separator-primary">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Contact Type</th>
+                                        <th>Contact Info</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Phone</td>
+                                        <td>@Model.phone</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Emergency Phone</td>
+                                        <td>@Model.emergencyPhone</td>
+                                    </tr>
                             
-                        </tbody>
-                    </table>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div id="academicInfo" class="tabcontent">
-            <h3>Academic Info</h3>
-            <div class="m-section">
-                <div class="m-section__content">
-                    <table class="table m-table m-table--head-separator-primary">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Board/University</th>
-                                <th>Degree</th>
-                                <th>Completion Date</th>
-                                <th>Total Marks</th>
-                                <th>Obtaind Marks</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                           
-                        </tbody>
-                    </table>
+                <div id="academicInfo" class="tabcontent">
+                    <h3>Academic Info</h3>
+                    <div class="m-section">
+                        <div class="m-section__content">
+                            <button class="btn btn-success pull-right" data-toggle="modal" data-target="#emptyModal" id="addAcademics"><i class="fa fa-plus"></i>Add</button>
+                            <table class="table m-table m-table--head-separator-primary">
+                                <thead>
+                                    <tr>
+                                        <th>Board/University</th>
+                                        <th>Degree</th>
+                                        <th>Completion Date</th>
+                                        <th>Total Marks</th>
+                                        <th>Obtaind Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   @foreach (var academic in Model.academics)
+                                   {
+                                       <tr>
+                                           <td> @academic.borad </td>
+                                           <td> @academic.degree </td>
+                                           <td> @academic.passing_year </td>
+                                           <td> @academic.total_marks </td>
+                                           <td> @academic.obtain_marks </td>
+                                       </tr>
+                                   }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div id="dependents" class="tabcontent">
-            <h3>Dependents</h3>
-            <div class="m-section">
-                <div class="m-section__content">
-                    <table class="table m-table m-table--head-separator-primary">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>First Name</th>
-                                <th>Contact</th>
-                                <th>Address</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                <div id="dependents" class="tabcontent">
+                    <h3>Dependents</h3>
+                    <div class="m-section">
+                        <div class="m-section__content">
+                            <table class="table m-table m-table--head-separator-primary">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Contact</th>
+                                        <th>Address</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
                             
-                        </tbody>
-                    </table>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div id="experience" class="tabcontent">
-            <h3>Experience</h3>
-            <div class="m-section">
-                <div class="m-section__content">
-                    <table class="table m-table m-table--head-separator-primary">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Company</th>
-                                <th>Start Date</th>
-                                <th>End Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                <div id="experience" class="tabcontent">
+                    <h3>Experience</h3>
+                    <div class="m-section">
+                        <div class="m-section__content">
+                            <table class="table m-table m-table--head-separator-primary">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Company</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
 
-                        </tbody>
-                    </table>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div id="documents" class="tabcontent">
-            <h3>Documents</h3>
-            <div class="m-section">
-                <div class="m-section__content">
-                    <table class="table m-table m-table--head-separator-primary">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Name</th>
-                                <th>Details</th>
-                                <th>Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                <div id="documents" class="tabcontent">
+                    <h3>Documents</h3>
+                    <div class="m-section">
+                        <div class="m-section__content">
+                            <table class="table m-table m-table--head-separator-primary">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Details</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
                            
-                        </tbody>
-                    </table>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div id="license" class="tabcontent">
-            <h3>License</h3>
-            <div class="m-section">
-                <div class="m-section__content">
-                    <table class="table m-table m-table--head-separator-primary">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Name</th>
-                                <th>Issued</th>
-                                <th>Expire Date</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                <div id="license" class="tabcontent">
+                    <h3>License</h3>
+                    <div class="m-section">
+                        <div class="m-section__content">
+                            <table class="table m-table m-table--head-separator-primary">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Issued</th>
+                                        <th>Expire Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
                            
-                        </tbody>
-                    </table>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div id="companyAssets" class="tabcontent">
-            <h3>Company Assets</h3>
-            <div class="m-section">
-                <div class="m-section__content">
-                    <table class="table m-table m-table--head-separator-primary">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Name</th>
-                                <th>Type</th>
-                                <th>Date Allotted</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                <div id="companyAssets" class="tabcontent">
+                    <h3>Company Assets</h3>
+                    <div class="m-section">
+                        <div class="m-section__content">
+                            <table class="table m-table m-table--head-separator-primary">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Type</th>
+                                        <th>Date Allotted</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
                             
-                        </tbody>
-                    </table>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div id="refrences" class="tabcontent">
-            <h3>References</h3>
-            <div class="m-section">
-                <div class="m-section__content">
-                    <table class="table m-table m-table--head-separator-primary">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Name</th>
-                                <th>Phone</th>
-                                <th>Address</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                <div id="refrences" class="tabcontent">
+                    <h3>References</h3>
+                    <div class="m-section">
+                        <div class="m-section__content">
+                            <table class="table m-table m-table--head-separator-primary">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Phone</th>
+                                        <th>Address</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
                            
-                        </tbody>
-                    </table>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div id="leaveBalance" class="tabcontent">
-            <h3>Tokyo</h3>
-            <div class="m-section">
-                <div class="m-section__content">
-                    <table class="table m-table m-table--head-separator-primary">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Leaves</th>
-                                <th>Allowed</th>
-                                <th>Month</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
+                <div id="leaveBalance" class="tabcontent">
+                    <h3>Tokyo</h3>
+                    <div class="m-section">
+                        <div class="m-section__content">
+                            <table class="table m-table m-table--head-separator-primary">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Leaves</th>
+                                        <th>Allowed</th>
+                                        <th>Month</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div id="extraduties" class="tabcontent">
-            <h3>Extra Duties</h3>
-            <div class="m-section">
-                <div class="m-section__content">
-                    <table class="table m-table m-table--head-separator-primary">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Name</th>
-                                <th>Type</th>
-                            </tr>
-                        </thead>
-                    </table>
+                <div id="extraduties" class="tabcontent">
+                    <h3>Extra Duties</h3>
+                    <div class="m-section">
+                        <div class="m-section__content">
+                            <table class="table m-table m-table--head-separator-primary">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Type</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div id="attendanceSettings" class="tabcontent">
-            <h3>Attendance Settings</h3>
-            <div class="m-section">
-                <div class="m-section__content">
-                    <table class="table m-table m-table--head-separator-primary">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Column 1</th>
-                                <th>column 2</th>
-                                <th>Column 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                <div id="attendanceSettings" class="tabcontent">
+                    <h3>Attendance Settings</h3>
+                    <div class="m-section">
+                        <div class="m-section__content">
+                            <table class="table m-table m-table--head-separator-primary">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Column 1</th>
+                                        <th>column 2</th>
+                                        <th>Column 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
                             
-                        </tbody>
-                    </table>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div id="salarySettings" class="tabcontent">
-            <h3>Salary Settings</h3>
-            <div class="m-section">
-                <div class="m-section__content">
-                    <table class="table m-table m-table--head-separator-primary">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Username</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                <div id="salarySettings" class="tabcontent">
+                    <h3>Salary Settings</h3>
+                    <div class="m-section">
+                        <div class="m-section__content">
+                            <table class="table m-table m-table--head-separator-primary">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Username</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
                             
-                        </tbody>
-                    </table>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-
 
     </div>
 
@@ -381,3 +388,27 @@
 </div>
 
 <!--end::Portlet-->
+
+@section scripts{
+    <script>
+        $("#addAcademics").on("click", function () {
+            $("#emptyModal .modal-title").text("Add Acedemics");
+            $("#emptyModal .modal-body").load('@Url.Action("Create", "Academics",new { Model.id })');
+        });
+        $("#emptyModal #submit").on("click", function () {
+            var data = $(this).closest("#emptyModal").find('form').serialize();
+            console.log(data);
+            $.ajax({
+                url: "@Url.Action("Create", "Academics")",
+                type: "POST",
+                processData: false,
+                success: function (response) {
+                    location.reload(true);
+                },
+                error: function (error) {
+                    alert("error While saving data: " + error)
+                }
+            });
+        });
+    </script>
+}

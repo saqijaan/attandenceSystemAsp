@@ -12,7 +12,7 @@ namespace AttendanceSystem.Models
         public string name { get; set; }
         public string gender { get; set; }
 
-        [Column(TypeName = "DateTime2")]
+        //[Column(TypeName = "DateTime2")]
         public DateTime dob { get; set; }
 
         public string address { get; set; }
@@ -29,15 +29,27 @@ namespace AttendanceSystem.Models
         public string bankAcc { get; set; }
         public string experience { get; set; }
 
+
+        /**
+         * All Foreign Keys
+         * */
         public int department_id { get; set; }
         public int shift_id { get; set; }
         public int subDepartment_id { get; set; }
 
+
+        /**
+         * All Relationships
+         * */
         [ForeignKey("shift_id")]
         public virtual Shift shift { get; set; }
 
         [ForeignKey("department_id")]
         public virtual Department department { get; set; }
 
+        public virtual ICollection<Documents> documents { get; set; }
+        public virtual ICollection<License> licenses { get; set; }
+        public virtual ICollection<CompanyAssets> companyAssets { get; set; }
+        public virtual ICollection<Academic> academics { get; set; }
     }
 }
