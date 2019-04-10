@@ -19,11 +19,5 @@ namespace AttendanceSystem.Models
         public DbSet<License> Licenses { get; set; }
         public DbSet<CompanyAssets> CompanyAssets { get; set; }
         public DbSet<Academic> Academics { get; set; }
-
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            Database.SetInitializer<MyDatabase>(null);
-            base.OnModelCreating(modelBuilder);
-        }
     }
 }
