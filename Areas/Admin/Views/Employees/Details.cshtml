@@ -401,6 +401,7 @@
             $.ajax({
                 url: "@Url.Action("Create", "Academics")",
                 type: "POST",
+                data : data,
                 processData: false,
                 success: function (response) {
                     location.reload(true);

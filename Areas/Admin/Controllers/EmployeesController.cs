@@ -17,7 +17,7 @@ namespace AttendanceSystem.Areas.Admin.Controllers
         // GET: Admin/Employees
         public ActionResult Index()
         {
-            var employees = db.Employees.Include(e => e.department).Include(e => e.shift);
+            var employees = db.Employees;
             return View(employees.ToList());
         }
 
@@ -49,7 +49,7 @@ namespace AttendanceSystem.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,name,gender,dob,address,city,country,image,phone,emergencyPhone,cnic,detail,religion,dislabled,bloodGroup,bankAcc,experience,department_id,shift_id,subDepartment_id")] Employee employee)
+        public ActionResult Create([Bind(Include = "id,name,gender,dob,address,city,country,image,phone,emergencyPhone,cnic,detail,religion,dislabled,bloodGroup,bankAcc,experience,department_id,subDepartment_id")] Employee employee)
         {
             if (ModelState.IsValid)
             {
@@ -59,7 +59,6 @@ namespace AttendanceSystem.Areas.Admin.Controllers
             }
 
             ViewBag.department_id = new SelectList(db.Departments, "id", "name", employee.department_id);
-            ViewBag.shift_id = new SelectList(db.Shifts, "id", "name", employee.shift_id);
             return View(employee);
         }
 
@@ -76,7 +75,6 @@ namespace AttendanceSystem.Areas.Admin.Controllers
                 return HttpNotFound();
             }
             ViewBag.department_id = new SelectList(db.Departments, "id", "name", employee.department_id);
-            ViewBag.shift_id = new SelectList(db.Shifts, "id", "name", employee.shift_id);
             return View(employee);
         }
 
@@ -94,7 +92,6 @@ namespace AttendanceSystem.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.department_id = new SelectList(db.Departments, "id", "name", employee.department_id);
-            ViewBag.shift_id = new SelectList(db.Shifts, "id", "name", employee.shift_id);
             return View(employee);
         }
 

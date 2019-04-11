@@ -13,7 +13,7 @@ namespace AttendanceSystem.Models
         public string gender { get; set; }
 
         //[Column(TypeName = "DateTime2")]
-        public DateTime dob { get; set; }
+        public string dob { get; set; }
 
         public string address { get; set; }
         public string city { get; set; }
@@ -34,15 +34,12 @@ namespace AttendanceSystem.Models
          * All Foreign Keys
          * */
         public int department_id { get; set; }
-        public int shift_id { get; set; }
         public int subDepartment_id { get; set; }
 
 
         /**
          * All Relationships
          * */
-        [ForeignKey("shift_id")]
-        public virtual Shift shift { get; set; }
 
         [ForeignKey("department_id")]
         public virtual Department department { get; set; }
