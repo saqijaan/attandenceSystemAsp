@@ -463,14 +463,21 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Academic.cs" />
+    <Compile Include="Models\Bank.cs" />
+    <Compile Include="Models\BankBranch.cs" />
+    <Compile Include="Models\BloodGroup.cs" />
+    <Compile Include="Models\City.cs" />
     <Compile Include="Models\CompanyAssets.cs" />
     <Compile Include="Models\Documents.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Experience.cs" />
     <Compile Include="Models\License.cs" />
+    <Compile Include="Models\MeritalStatus.cs" />
     <Compile Include="Models\MyDatabase.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\LegalEntity.cs" />
     <Compile Include="Models\OperatingUnit.cs" />
+    <Compile Include="Models\Reference.cs" />
     <Compile Include="Models\Seeder.cs" />
     <Compile Include="Models\Shift.cs" />
     <Compile Include="Models\SubDepartment.cs" />

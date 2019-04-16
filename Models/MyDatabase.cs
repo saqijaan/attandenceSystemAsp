@@ -19,5 +19,12 @@ namespace AttendanceSystem.Models
         public DbSet<License> Licenses { get; set; }
         public DbSet<CompanyAssets> CompanyAssets { get; set; }
         public DbSet<Academic> Academics { get; set; }
+        public DbSet<Reference> Reference { get; set; }
+        public DbSet<City> City { get; set; }
+        public DbSet<Experience> Experience { get; set; }
+        public DbSet<Bank> Bank { get; set; }
+        public DbSet<BankBranch> BankBranch { get; set; }
+        public DbSet<BloodGroup> BloodGroup { get; set; }
+
     }
 }
