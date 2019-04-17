@@ -10,7 +10,7 @@ namespace AttendanceSystem.Models
     {
         public int id { get; set; }
         public string name { get; set; }
-        public string address { get; set; }
+        public string branch_name { get; set; }
 
         public int city_id { get; set; }
 

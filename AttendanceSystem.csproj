@@ -449,7 +449,6 @@
     <Compile Include="Areas\Admin\Controllers\CompanyAssetsController.cs" />
     <Compile Include="Areas\Admin\Controllers\DepartmentsController.cs" />
     <Compile Include="Areas\Admin\Controllers\DocumentsController.cs" />
-    <Compile Include="Areas\Admin\Controllers\EmployeesController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LegalEntitiesController.cs" />
     <Compile Include="Areas\Admin\Controllers\LicensesController.cs" />
@@ -464,13 +463,20 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Academic.cs" />
     <Compile Include="Models\Bank.cs" />
-    <Compile Include="Models\BankBranch.cs" />
     <Compile Include="Models\BloodGroup.cs" />
     <Compile Include="Models\City.cs" />
     <Compile Include="Models\CompanyAssets.cs" />
+    <Compile Include="Models\Designation.cs" />
     <Compile Include="Models\Documents.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\HeadOffice.cs" />
+    <Compile Include="Models\PaymentType.cs" />
+    <Compile Include="Models\Personal.cs" />
+    <Compile Include="Models\EmploymentType.cs" />
     <Compile Include="Models\Experience.cs" />
+    <Compile Include="Models\Grade.cs" />
+    <Compile Include="Models\JobStatus.cs" />
+    <Compile Include="Models\LeavePlanType.cs" />
     <Compile Include="Models\License.cs" />
     <Compile Include="Models\MeritalStatus.cs" />
     <Compile Include="Models\MyDatabase.cs" />
@@ -481,6 +487,7 @@
     <Compile Include="Models\Seeder.cs" />
     <Compile Include="Models\Shift.cs" />
     <Compile Include="Models\SubDepartment.cs" />
+    <Compile Include="Models\TransferType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

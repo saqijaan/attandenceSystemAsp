@@ -19,7 +19,7 @@ namespace AttendanceSystem.Models
         public int employee_id { get; set; }
 
         [ForeignKey("employee_id")]
-        public virtual Employee Employee { get; set; }
+        public virtual Personal Employee { get; set; }
 
     }
 }
