@@ -41,12 +41,11 @@ namespace AttendanceSystem.Models
          Foreign Keys Definations
          */
         public int department_id { get; set; }
-        public int sub_department_id { get; set; }
+        public int? sub_department_id { get; set; }
         public int shift_id { get; set; }
         public int employementType_id { get; set; }
         public int jobStatus_id { get; set; }
         public int designation_id { get; set; }
-        public int operatingUnit_id { get; set; }
         public int head_id { get; set; }
         public int grade_id { get; set; }
         public int leavePlanType_id { get; set; }
@@ -67,8 +66,6 @@ namespace AttendanceSystem.Models
         public virtual JobStatus JobStatus { get; set; }
         [ForeignKey("designation_id")]
         public virtual Designation Designation { get; set; }
-        [ForeignKey("operatingUnit_id")]
-        public virtual OperatingUnit OperatingUnit { get; set; }
         [ForeignKey("head_id")]
         public virtual HeadOffice HeadOffice { get; set; }
         [ForeignKey("grade_id")]

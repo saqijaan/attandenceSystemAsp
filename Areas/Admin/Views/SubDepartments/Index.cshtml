@@ -32,9 +32,6 @@
                     <th>
                         Department
                     </th>
-                    <th>
-                        Shift
-                    </th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -47,9 +44,6 @@
                         </td>
                         <td>
                             @item.department.name
-                        </td>
-                        <td>
-                            @item.shift.name
                         </td>
                         <td>
                             <a href="@Url.Action("Edit", new { id= item.id } )" class="btn btn-success btn-sm"><i class="flaticon-edit"></i></a>

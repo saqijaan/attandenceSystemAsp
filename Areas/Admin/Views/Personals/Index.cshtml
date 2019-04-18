@@ -1,0 +1,311 @@
+﻿@model IEnumerable<AttendanceSystem.Models.Personal>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Bank.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodGroup.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MeritalStatus.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.first_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.middel_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.last_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dob)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.father_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nationality)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.emergencyPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cnic)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cnicExpiry)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.detail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.religion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.disabled)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.identification)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.mobileNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.placeofBirth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.bankAccNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.experience)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.height)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ntnNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sessi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.eobi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.motherMaidenName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.khandanNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.emerContact_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.emerContact_no)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.emerContact_relation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.emerContact_adderess)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.beni_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.beni_relation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.beni_share)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.isConvictedBycourt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.passportNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.passportPlace)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.passportExpiryDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.created_at)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.updated_at)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bank.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BloodGroup.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MeritalStatus.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.first_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.middel_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.last_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dob)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.father_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nationality)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.emergencyPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cnic)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cnicExpiry)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.detail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.religion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.disabled)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.identification)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.mobileNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.placeofBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.bankAccNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.experience)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.height)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.weight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ntnNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sessi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.eobi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.motherMaidenName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.khandanNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.emerContact_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.emerContact_no)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.emerContact_relation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.emerContact_adderess)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.beni_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.beni_relation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.beni_share)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isConvictedBycourt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.passportNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.passportPlace)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.passportExpiryDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.created_at)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.updated_at)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+                @Html.ActionLink("Details", "Details", new { id=item.id }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.id })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

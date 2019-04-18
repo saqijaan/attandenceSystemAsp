@@ -17,7 +17,7 @@ namespace AttendanceSystem.Areas.Admin.Controllers
         // GET: Admin/SubDepartments
         public ActionResult Index()
         {
-            var subDepartments = db.SubDepartments.Include(s => s.department).Include(s => s.shift);
+            var subDepartments = db.SubDepartments;
             return View(subDepartments.ToList());
         }
 
@@ -59,7 +59,6 @@ namespace AttendanceSystem.Areas.Admin.Controllers
             }
 
             ViewBag.department_id = new SelectList(db.Departments, "id", "name", subDepartment.department_id);
-            ViewBag.shift_id = new SelectList(db.Shifts, "id", "name", subDepartment.shift_id);
             return View(subDepartment);
         }
 
@@ -76,7 +75,6 @@ namespace AttendanceSystem.Areas.Admin.Controllers
                 return HttpNotFound();
             }
             ViewBag.department_id = new SelectList(db.Departments, "id", "name", subDepartment.department_id);
-            ViewBag.shift_id = new SelectList(db.Shifts, "id", "name", subDepartment.shift_id);
             return View(subDepartment);
         }
 
@@ -94,7 +92,6 @@ namespace AttendanceSystem.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.department_id = new SelectList(db.Departments, "id", "name", subDepartment.department_id);
-            ViewBag.shift_id = new SelectList(db.Shifts, "id", "name", subDepartment.shift_id);
             return View(subDepartment);
         }
 

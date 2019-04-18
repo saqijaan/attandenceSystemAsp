@@ -15,7 +15,7 @@ namespace AttendanceSystem.Models
         public string mobile { get; set; }
         public string nic { get; set; }
 
-        public int city_id { get; set; }
+        public int? city_id { get; set; }
         public int bloodgroup_id { get; set; }
 
         [ForeignKey("city_id")]

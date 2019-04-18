@@ -1,0 +1,328 @@
+﻿@model AttendanceSystem.Models.Employee
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>Employee</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Department.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Department.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Designation.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Designation.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.EmploymentType.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.EmploymentType.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Grade.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Grade.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.HeadOffice.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.HeadOffice.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.JobStatus.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.JobStatus.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.LeavePlanType.id)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.LeavePlanType.id)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Shift.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Shift.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.SubDepartment.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SubDepartment.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TransferType.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TransferType.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.isShadow)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.isShadow)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.isRejoin)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.isRejoin)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.hiringDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.hiringDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.joiningDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.joiningDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.confirmationDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.confirmationDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.expiryDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.expiryDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.noticePeriod)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.noticePeriod)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.noticePeriodStartDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.noticePeriodStartDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.resonForLeaving)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.resonForLeaving)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.payscale)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.payscale)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.basicPay)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.basicPay)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.postingDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.postingDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.dailyWagerRate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.dailyWagerRate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.grossSalary)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.grossSalary)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.createdDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.createdDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.joiningLetterDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.joiningLetterDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.idCardIssuanceDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.idCardIssuanceDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.healthCardIssuanceDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.healthCardIssuanceDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.eobCardIssuanceDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.eobCardIssuanceDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.probationPeriod)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.probationPeriod)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.idCardExpiryDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.idCardExpiryDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.contractExpiryDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.contractExpiryDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.isInterestBased)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.isInterestBased)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.isZakatBased)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.isZakatBased)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.professionalTaxAmount)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.professionalTaxAmount)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.eligibleForTaxInLastYear)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.eligibleForTaxInLastYear)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.extendProbation)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.extendProbation)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>

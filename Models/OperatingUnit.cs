@@ -15,7 +15,7 @@ namespace AttendanceSystem.Models
         public string unit_type { get; set; }
         public string unit_subtype { get; set; }
 
-        public int city_id { get; set; }
+        public int? city_id { get; set; }
         public int legalEntity_id { get; set; }
 
         [ForeignKey("city_id")]

@@ -1,0 +1,394 @@
+﻿@model AttendanceSystem.Models.Personal
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Personal</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Bank.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Bank.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.BloodGroup.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.BloodGroup.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.MeritalStatus.name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.MeritalStatus.name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.first_name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.first_name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.middel_name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.middel_name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.last_name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.last_name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.dob)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.dob)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.gender)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.gender)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.father_name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.father_name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.address)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.address)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.country)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.country)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.nationality)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.nationality)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.image)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.image)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.phone)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.phone)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.emergencyPhone)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.emergencyPhone)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.cnic)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.cnic)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.cnicExpiry)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.cnicExpiry)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.detail)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.detail)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.religion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.religion)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.disabled)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.disabled)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.identification)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.identification)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.email)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.email)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.mobileNo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.mobileNo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.placeofBirth)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.placeofBirth)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.bankAccNo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.bankAccNo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.experience)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.experience)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.height)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.height)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.weight)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.weight)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ntnNo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ntnNo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.sessi)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.sessi)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.eobi)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.eobi)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.motherMaidenName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.motherMaidenName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.khandanNo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.khandanNo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.emerContact_name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.emerContact_name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.emerContact_no)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.emerContact_no)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.emerContact_relation)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.emerContact_relation)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.emerContact_adderess)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.emerContact_adderess)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.beni_name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.beni_name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.beni_relation)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.beni_relation)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.beni_share)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.beni_share)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.isConvictedBycourt)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.isConvictedBycourt)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.passportNo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.passportNo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.passportPlace)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.passportPlace)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.passportExpiryDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.passportExpiryDate)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.created_at)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.created_at)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.updated_at)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.updated_at)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

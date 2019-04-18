@@ -17,7 +17,8 @@ namespace AttendanceSystem.Areas.Admin.Controllers
         // GET: Admin/LegalEntities
         public ActionResult Index()
         {
-            return View(db.LegalEntity.ToList());
+            var legalEntity = db.LegalEntity.Include(l => l.BloodGroup).Include(l => l.City);
+            return View(legalEntity.ToList());
         }
 
         // GET: Admin/LegalEntities/Details/5
@@ -38,6 +39,8 @@ namespace AttendanceSystem.Areas.Admin.Controllers
         // GET: Admin/LegalEntities/Create
         public ActionResult Create()
         {
+            ViewBag.bloodgroup_id = new SelectList(db.BloodGroups, "id", "name");
+            ViewBag.city_id = new SelectList(db.Cities, "id", "name");
             return View();
         }
 
@@ -46,7 +49,7 @@ namespace AttendanceSystem.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,name")] LegalEntity legalEntity)
+        public ActionResult Create([Bind(Include = "id,name,logo,address,contact_person,mobile,nic,city_id,bloodgroup_id")] LegalEntity legalEntity)
         {
             if (ModelState.IsValid)
             {
@@ -55,6 +58,8 @@ namespace AttendanceSystem.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.bloodgroup_id = new SelectList(db.BloodGroups, "id", "name", legalEntity.bloodgroup_id);
+            ViewBag.city_id = new SelectList(db.Cities, "id", "name", legalEntity.city_id);
             return View(legalEntity);
         }
 
@@ -70,6 +75,8 @@ namespace AttendanceSystem.Areas.Admin.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.bloodgroup_id = new SelectList(db.BloodGroups, "id", "name", legalEntity.bloodgroup_id);
+            ViewBag.city_id = new SelectList(db.Cities, "id", "name", legalEntity.city_id);
             return View(legalEntity);
         }
 
@@ -78,7 +85,7 @@ namespace AttendanceSystem.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,name")] LegalEntity legalEntity)
+        public ActionResult Edit([Bind(Include = "id,name,logo,address,contact_person,mobile,nic,city_id,bloodgroup_id")] LegalEntity legalEntity)
         {
             if (ModelState.IsValid)
             {
@@ -86,6 +93,8 @@ namespace AttendanceSystem.Areas.Admin.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.bloodgroup_id = new SelectList(db.BloodGroups, "id", "name", legalEntity.bloodgroup_id);
+            ViewBag.city_id = new SelectList(db.Cities, "id", "name", legalEntity.city_id);
             return View(legalEntity);
         }
 

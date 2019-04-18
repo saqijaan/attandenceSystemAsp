@@ -17,7 +17,7 @@ namespace AttendanceSystem.Areas.Admin.Controllers
         // GET: Admin/OperatingUnits
         public ActionResult Index()
         {
-            var operatingUnit = db.OperatingUnit.Include(o => o.legalEntity);
+            var operatingUnit = db.OperatingUnit.Include(o => o.City).Include(o => o.legalEntity);
             return View(operatingUnit.ToList());
         }
 
@@ -39,6 +39,7 @@ namespace AttendanceSystem.Areas.Admin.Controllers
         // GET: Admin/OperatingUnits/Create
         public ActionResult Create()
         {
+            ViewBag.city_id = new SelectList(db.Cities, "id", "name");
             ViewBag.legalEntity_id = new SelectList(db.LegalEntity, "id", "name");
             return View();
         }
@@ -48,7 +49,7 @@ namespace AttendanceSystem.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,name,legalEntity_id")] OperatingUnit operatingUnit)
+        public ActionResult Create([Bind(Include = "id,name,address,location,region,unit_type,unit_subtype,city_id,legalEntity_id")] OperatingUnit operatingUnit)
         {
             if (ModelState.IsValid)
             {
@@ -57,6 +58,7 @@ namespace AttendanceSystem.Areas.Admin.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.city_id = new SelectList(db.Cities, "id", "name", operatingUnit.city_id);
             ViewBag.legalEntity_id = new SelectList(db.LegalEntity, "id", "name", operatingUnit.legalEntity_id);
             return View(operatingUnit);
         }
@@ -73,6 +75,7 @@ namespace AttendanceSystem.Areas.Admin.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.city_id = new SelectList(db.Cities, "id", "name", operatingUnit.city_id);
             ViewBag.legalEntity_id = new SelectList(db.LegalEntity, "id", "name", operatingUnit.legalEntity_id);
             return View(operatingUnit);
         }
@@ -82,7 +85,7 @@ namespace AttendanceSystem.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,name,legalEntity_id")] OperatingUnit operatingUnit)
+        public ActionResult Edit([Bind(Include = "id,name,address,location,region,unit_type,unit_subtype,city_id,legalEntity_id")] OperatingUnit operatingUnit)
         {
             if (ModelState.IsValid)
             {
@@ -90,6 +93,7 @@ namespace AttendanceSystem.Areas.Admin.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.city_id = new SelectList(db.Cities, "id", "name", operatingUnit.city_id);
             ViewBag.legalEntity_id = new SelectList(db.LegalEntity, "id", "name", operatingUnit.legalEntity_id);
             return View(operatingUnit);
         }

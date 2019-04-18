@@ -6,7 +6,7 @@ using System.Data.Entity;
 using MySql.Data.Entity;
 namespace AttendanceSystem.Models
 {
-   [DbConfigurationType(typeof(MySqlEFConfiguration))]
+   //[DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class MyDatabase : DbContext
     {
         public DbSet<Department> Departments { get; set; }
@@ -34,5 +34,6 @@ namespace AttendanceSystem.Models
         public DbSet<JobStatus> JobStatuses { get; set; }
         public DbSet<HeadOffice> HeadOffices { get; set; }
 
+        public System.Data.Entity.DbSet<AttendanceSystem.Models.MeritalStatus> MeritalStatus { get; set; }
     }
 }

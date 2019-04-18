@@ -432,6 +432,16 @@
     <Content Include="Areas\Admin\Views\Academics\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Academics\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Academics\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Employees-o\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Employees-o\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Employees-o\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Employees-o\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Employees-o\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Personals\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Personals\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Personals\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Personals\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Personals\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -449,6 +459,7 @@
     <Compile Include="Areas\Admin\Controllers\CompanyAssetsController.cs" />
     <Compile Include="Areas\Admin\Controllers\DepartmentsController.cs" />
     <Compile Include="Areas\Admin\Controllers\DocumentsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\EmployeesController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LegalEntitiesController.cs" />
     <Compile Include="Areas\Admin\Controllers\LicensesController.cs" />
@@ -457,6 +468,7 @@
     <Compile Include="Areas\Admin\Controllers\SubDepartmentsController.cs" />
     <Compile Include="Areas\Admin\Models\DepartmentRepository.cs" />
     <Compile Include="Areas\Admin\Models\EmployeeRepository.cs" />
+    <Compile Include="Areas\Admin\Views\Employees\PersonalsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

@@ -1,0 +1,257 @@
+﻿@model IEnumerable<AttendanceSystem.Models.Employee>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Department.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Designation.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmploymentType.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Grade.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HeadOffice.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobStatus.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LeavePlanType.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Shift.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SubDepartment.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TransferType.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.isShadow)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.isRejoin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.hiringDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.joiningDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.confirmationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.expiryDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.noticePeriod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.noticePeriodStartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.resonForLeaving)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.payscale)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.basicPay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.postingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dailyWagerRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.grossSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.createdDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.joiningLetterDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idCardIssuanceDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.healthCardIssuanceDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.eobCardIssuanceDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.probationPeriod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idCardExpiryDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.contractExpiryDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.isInterestBased)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.isZakatBased)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.professionalTaxAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.eligibleForTaxInLastYear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.extendProbation)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Department.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Designation.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmploymentType.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grade.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HeadOffice.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobStatus.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LeavePlanType.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Shift.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SubDepartment.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransferType.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isShadow)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isRejoin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hiringDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.joiningDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.confirmationDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.expiryDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.noticePeriod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.noticePeriodStartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.resonForLeaving)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.payscale)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.basicPay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.postingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dailyWagerRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.grossSalary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.createdDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.joiningLetterDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idCardIssuanceDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.healthCardIssuanceDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.eobCardIssuanceDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.probationPeriod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idCardExpiryDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.contractExpiryDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isInterestBased)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isZakatBased)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.professionalTaxAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.eligibleForTaxInLastYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.extendProbation)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+                @Html.ActionLink("Details", "Details", new { id=item.id }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.id })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

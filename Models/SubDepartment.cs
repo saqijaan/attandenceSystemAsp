@@ -10,14 +10,8 @@ namespace AttendanceSystem.Models
         public int id { get; set; }
         public string name { get; set; }
         public int department_id { get; set; }
-        public int shift_id { get; set; }
 
         [ForeignKey("department_id")]
         public virtual Department department { get; set; }
-
-        [ForeignKey("shift_id")]
-        public virtual Shift shift { get; set; }
-
-
     }
 }
